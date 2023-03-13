@@ -1,0 +1,27 @@
+.alert{
+    max-width: 400px;
+    position: relative;
+    
+    transition: all 1s;
+    animation: alert 0.6s ;
+    transform: translate(-50%, 0);
+}
+
+@keyframes alert {
+    0%{
+        transform: translate(-50%, -50%);
+    }
+    100%{
+        transform: translate(-50%, 0);
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.alert-content{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
