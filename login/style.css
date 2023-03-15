@@ -341,5 +341,37 @@ form.sign-in-form {
     bottom: 72%;
     left: 50%;
   }
+}
 
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Style the custom checkbox */
+input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 2px solid #666;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Change the color of the custom checkbox when checked */
+input[type="checkbox"]:checked::before {
+  background-color: #fa8c16;
+  border-color: #ffead4;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
 }
